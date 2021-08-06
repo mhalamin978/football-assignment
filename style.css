@@ -30,33 +30,7 @@
     font-size: 1rem;
     color: #777;
   }
-  /*---NAVIGATION BAR-----*/
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
-  nav a {
-    text-decoration: none;
-    font-size: 16px;
-    color: white;  
-    line-height: 25px;
-    padding: 19px;
-  }
-  .btn {
-    background: var(--btn-bg);
-    padding: 9px 13px;
-    border: none;
-    font-size: 16px;
-    line-height: 24px;
-     color: white;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-  
-  .navbar-item {
-    padding: 4px;
-  }
+ 
   /*-------HEADER--------*/
   .header {
     background-color: var(--top-bg);
