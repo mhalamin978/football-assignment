@@ -32,6 +32,12 @@
   }
  
   /*-------HEADER--------*/
+.btn{
+    height:20px;
+    width:40px;
+    background-color:orange;
+    text-decoration:none;
+}
   .header {
     background-color: var(--top-bg);
     padding-top: 53px;
