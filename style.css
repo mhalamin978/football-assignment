@@ -1,0 +1,269 @@
+:root {
+    --btn-bg: #e02c6d;
+    --top-bg: #2d25a0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /*-------------------------
+  Fonts
+  -------------------------*/
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3{
+    font-size:28px;
+  }
+  p {
+    font-size: 1rem;
+    color: #777;
+  }
+  /*-------------------------
+  nav bar style
+  -------------------------*/
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px;
+  }
+  .btn {
+    background: var(--btn-bg);
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .navbar-item {
+    padding: 5px;
+  }
+  /*-------------------------
+  heading part style 
+  -------------------------*/
+  .header {
+    background-color: var(--top-bg);
+    padding-top: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /* -------------------
+  Container
+  ----------------------*/
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .content-box {
+    width: 550px;
+    margin: 90px 0;
+  }
+  .content-box img {
+    width: 100%;
+  }
+  .banner-img {
+    width: 100%;
+    transition: all 1s;
+    border-radius: 10px;
+  }
+  
+  .banner-img:hover {
+    transform: scale(1.2);
+  }
+  
+  /*-------------------------
+   player detail style  
+  -------------------------*/
+  .player-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 70px 250px;
+  }
+  
+  .player {
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 20px rgb(223, 221, 221);
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .player img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  /* ------------------------
+  Team search
+  --------------------------- */
+  
+  .team-search {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  input[type="search"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+  }
+  /*-------------------------
+  footer style 
+  -------------------------*/
+  
+  footer {
+    text-align: center;
+    background: #000000ea;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .footer-img {
+    margin-top: 20px;
+    width: 400px;
+    border-radius: 10px;
+    filter: grayscale(50%);
+    transition: all 1s;
+  }
+  .footer-img:hover {
+    filter: grayscale(0%);
+  }
+  
+  .footer-logo {
+    margin-right: 10px;
+    width: 40px;
+  }
+
+  /* Responsive */
+  /* -------------
+Min size
+---------------- */
+@media (min-width: 688px) {
+    .menu-icon {
+      display: none;
+    }
+    
+  }
+  @media (min-width: 1200px) {
+    .player-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 70px 320px;
+      justify-content: center;
+    }
+    .player {
+      width: 350px;
+      height: 450px;
+      padding: 10px;
+    }
+  }
+  
+  /* -------------
+  Max size
+  ---------------- */
+  @media (max-width: 480px) {
+    .player {
+      width: 300px;
+      height: 430px;
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+  @media (max-width: 768px) {
+    .top-container {
+      padding-top: 0px;
+    }
+    .header {
+      padding-top: 0px;
+    }
+    .menu-icon {
+      color: white;
+    }
+    .menu-icon .fa-navicon {
+      font-size: 30px;
+    }
+    nav .navbar-links {
+      display: none;
+    }
+    nav a {
+      padding: 5px;
+    }
+    .content-box {
+      padding: 0px 15px;
+    }
+  
+    h1 {
+      font-size: 45px;
+    }
+  
+    .player-container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px;
+      align-items: center;
+    }
+    .player {
+      width: 300px;
+      height: 440px;
+      padding: 5px;
+      margin: 5px;
+    }
+    input[type="search"] {
+      width: 100%;
+    }
+    footer {
+      text-align: center;
+    }
+    .footer-img {
+      width: 200px;
+    }
+  
+    .footer-logo {
+      width: 40px;
+    }
+    .team-search {
+      align-items: stretch;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .player-container {
+      grid-template-columns: 1fr 1fr;
+      padding: 40px 150px;
+      justify-content: center;
+    }
+  
+    .player {
+      width: 350px;
+      height: 450px;
+      padding: 10px;
+      margin: 10px;
+    }
+    
+  }
+  
